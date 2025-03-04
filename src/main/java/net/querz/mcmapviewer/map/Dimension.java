@@ -36,7 +36,9 @@ public enum Dimension {
 				return dimension;
 			}
 		}
-		throw new IllegalArgumentException("invalid dimension: " + id);
+
+		System.out.println("Unknown dimension: " + id);
+		return OVERWORLD;
 	}
 
 	public int getId() {
